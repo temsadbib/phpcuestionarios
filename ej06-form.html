@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de Multiplicar</title>
+
+</head>
+
+<body>
+    <h1>Matrices 2 (Formulario)</h1>
+    <p> Indique el rango del número de vaores y el rango de los valores
+         y mostraré un numero aleatorio de valores aleatorios en los rangos indicados.</p>
+            <form action="./ej06.php" method="GET">
+                <div class="columnas">
+                    <label>Número mínimo de valores:</label>
+                    <input type="number" name="nummin" min="1" required>
+                </div>
+
+                <div class="numeros">
+                    <label>Número máximo de valores:</label>
+                    <input type="number" name="nummax" min="1" required>
+                </div>
+
+                <div class="numeros">
+                    <label>Valor mínimo:</label>
+                    <input type="number" name="valmin" min="0" required>
+                </div>
+
+                <div class="numeros">
+                    <label>Valor máximo:</label>
+                    <input type="number" name="valmax" min="1" required>
+                </div>
+
+                <button type="submit" name="accion" value="mostrar">Mostrar</button>
+                <button type="reset">Borrar</button>
+            </form>
+
+</body>
+
+</html>
