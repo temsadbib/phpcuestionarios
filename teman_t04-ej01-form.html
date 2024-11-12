@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Colores</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colores 3 (Formulario)</h1>
+    <p>Elija los colores a cambiar:</p>
+
+    <form action="teman_t04-ej01.php" method="POST">
+        
+        <label for="colorFondo">Color de fondo de la página:</label>
+        <input type="color" id="colorFondo" name="colorFondo" value="#ffffff"><br><br>
+        
+        <label for="colorTexto">Color de la letra de la página:</label>
+        <input type="color" id="colorTexto" name="colorTexto" value="#000000"><br><br>
+        
+        <button type="submit" name="accion" value="enviar">Enviar</button>
+        <button type="submit" name="accion" value="eliminar">Eliminar</button>
+    </form>
+</body>
+</html>

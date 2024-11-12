@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correo</title>
+
+</head>
+
+<body>
+
+    <h1>Datos personales 4 (Formulario)</h1>
+    <form action="teman_t04-ej02.php" method="GET">
+        <div class="formulario">
+            <label for="correo">Indique su dirección de correo:</label>
+            <input type="email" name="correo" placeholder="Correo" required>
+            <br>
+            <label for="correo2">Confirme su dirección de correo:</label>
+            <input type="email" name="correo2" placeholder="Confirmar correo" required>
+        </div>
+        <div class="opciones">
+            <p>Indique si quiere recibir correos nuestros: </p>
+            
+            <select class="opcioneslinea" name="opcion">
+                <option  value="si">Sí</option>
+                <option  value="no">No</option>
+            </select>
+        </div>
+
+        <div class="botones">
+            <button type="submit" name="accion" value="enviar">Enviar</button>
+            <button type="submit" name="accion" value="eliminar">Borrar</button>
+        </div>
+    </form>
+</body>
+
+</html>
